@@ -3,13 +3,12 @@ export default function Index() {
 	return (
 		<>
 			<h1 className="text-3xl">Movie Index</h1>
-			<Link to="/movie/1/edit/">Edit</Link>
-
-			<br />
-			<br />
-			<br />
-
-			<h2 className="font-bold">To see the issue</h2>
+			<Link
+				to="/movie/1/edit/"
+				className="underline">
+				Edit
+			</Link>
+			<h2 className="font-bold mt-12">To see the issue</h2>
 			<ol className="text-sm">
 				<li>- Click edit</li>
 				<li>- Click save</li>

@@ -1,4 +1,4 @@
-import { Form, useLoaderData } from "@remix-run/react";
+import { Form } from "@remix-run/react";
 import { getSession, commitSession } from "../sessions";
 import { ActionFunctionArgs, json, LoaderFunctionArgs, redirect } from "@remix-run/cloudflare";
 
@@ -21,9 +21,13 @@ export default function Index() {
 		<>
 			<h1 className="text-3xl">Edit Movie</h1>
 			<Form method="POST">
-				<button type="submit">Save</button>
+				<button
+					className="underline"
+					type="submit">
+					Save
+				</button>
 			</Form>
-			<a href="javascript:history.back()">Back</a>
+			<a className="underline" href="javascript:history.back()">Back</a>
 		</>
 	);
 }
